@@ -10,7 +10,7 @@ const RecipeList = ({ recipes }) =>
             <>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     {recipes.map((recipe, index) => (
-                        <RecipeItem recipeProp={recipe}  key={index}/>
+                        <RecipeItem recipeProp={recipe}  key={recipe.id}/>
                     ))}
                 </div>
             </>

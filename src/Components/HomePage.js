@@ -25,6 +25,7 @@ const HomePage = () =>
         }, []);
 
         const handleSearch = (searchTerm) => {
+            handleClear();
             console.log(searchTerm)
             const matchingRecipes = recipes.filter(recipe =>
               recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
