@@ -17,8 +17,13 @@ code {
   margin: 2px;
 }
 
-.card-img-top
+/* .card-img-top
 {
   min-width: 250px !important;
   min-height: 250px;
-}
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+} */

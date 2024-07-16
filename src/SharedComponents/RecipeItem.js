@@ -30,8 +30,18 @@ const RecipeItem = ({recipeProp}) => {
     <div className="recipe-page">
         <div class="col"  onClick={handleRecipeClick}>
             <div class="card h-100">
-            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
-                alt={recipe.name} />
+            {/* <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+                alt={recipe.name} /> */}
+                        {/* {
+            recipe.image_url
+                ? <ImageComponent image_url={recipe.image_url} />
+                : <ImageComponent image_url="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" />
+        } */}
+                {
+                    recipe.image_url 
+                        ? <img src={recipe.image_url} className="card-img-top" alt={recipe.name} />
+                        : <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" className="card-img-top" alt={recipe.name} />
+                }
             <div class="card-body">
                 <h5 class="card-title">{recipe.name}</h5>
                 <p class="card-text"><strong>Cuisine:</strong> {recipe.cuisine}</p>
